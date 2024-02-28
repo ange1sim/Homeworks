@@ -34,18 +34,7 @@ func main() {
 	case 6:
 		pkg.DaySix()
 	case 7:
-		fmt.Println("Выберите задание:")
-		fmt.Println("1. Reverse array")
-		fmt.Println("2. Разбиение массива на слайсы")
-		var choice int
-		fmt.Scan(&choice)
-		if choice == 1{
-			pkg.Reverse()
-		} else if choice == 2{
-			array := []int{1, 2, 3, 4, 5}
-    		even, odd := pkg.EvenOdd(array)
-    		fmt.Printf("Четные числа: %d\nНечётные числа: %d\n", odd, even)
-		}
+		pkg.DaySeven()
 	default:
 		fmt.Println("Вы выбрали неверный день обучения")
 	}
